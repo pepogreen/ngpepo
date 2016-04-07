@@ -1,0 +1,33 @@
+
+@import "ngpepo/variables";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+@import "ngpepo/mixins";
+@import "ngpepo/colors";
+@import "ngpepo/global/content";
+@import "ngpepo/global/footer_g";
+@import "ngpepo/global/header_g";
+@import "ngpepo/forms";
+@import "ngpepo/objects";
+@import "ngpepo/transitions";
+@import "ngpepo/ui/buttons";
+@import "ngpepo/ui/navSub";
+@import "ngpepo/ui/tabs";
+@import "ngpepo/directives/error_g";
+@import "ngpepo/directives/loading_g";
+@import "ngpepo/pages/ng_pepo";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@-webkit-keyframes rightThenLeft {
+    0%   {margin-right:100%;}
+    50%  {margin-right:0;}
+    100% {margin-right:100%;}
+ }

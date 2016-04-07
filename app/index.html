@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>ngpepo</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,initial-scale=1,target-densitydpi=device-dpi">
+   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/ngpepo_vendor_min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/ngpepo_1.0.0_min.css -->
+    <link rel="stylesheet" href="styles/ngpepo_min.css">
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/ngpepo_1.0.0_min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/stacktrace-js/stacktrace.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+  </head>
+    <body ng-strict-di>
+  <!-- Add your site or application content here -->
+    <div id="wrapper">
+      <!-- BEGIN: header__site -->
+      <header-g></header-g>
+      <!-- END: header__site -->
+      <!-- BEGIN: //////////////////////////
+      //////////  CONTENT WILL LOAD HERE ////////////////////   -->
+      <div id="content">
+        <error-g ng-if="error"></error-g>
+        <div>
+            <loading-g ng-if="loading"></loading-g>
+            <div ng-view="" autoscroll="true" ng-show="!error"></div>
+        </div>
+       </div><!-- #content -->
+      <!-- END: CONTENT -->
+      <footer-g></footer-g>
+    </div>
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/ngpepo_scripts_1.0.0.js -->
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/services/ConstantsFactory.js"></script>
+
+
+    <!-- API CALLS -->
+    <script src="scripts/services/NgPepoFactory.js"></script>
+    <!-- END API CALLS -->
+
+    <!-- Filters -->
+
+    <!-- Controllers -->
+    <script src="scripts/controllers/NgPepo.js"></script>
+
+
+  <!-- Directives -->
+    <script src="scripts/directives/footer_g/footer_g.js"></script>
+    <script src="scripts/directives/header_g/header_g.js"></script>
+    <script src="scripts/directives/error_g/error_g.js"></script>
+    <script src="scripts/directives/loading_g/loading_g.js"></script>
+  <!-- endbuild -->
+  </body>
+</html>

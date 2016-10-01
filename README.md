@@ -1,10 +1,10 @@
-#Ng-pepo
+#Ngpepo
 
 This is a pepo for Angular beginners. Just pull it and start development....
 
 ### Clone angular-seed
 
-Clone the angular-seed repository using [git][git]:
+Clone ngpepo repository using git:
 
 ```
 git clone https://github.com/pepogreen/ngpepo.git

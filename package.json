@@ -1,6 +1,7 @@
 {
   "name": "ngpepo",
   "version": "0.0.0",
+  "description": "Angular Pepo Project",
   "dependencies": {},
   "devDependencies": {
     "gifsicle": "1.0.3",

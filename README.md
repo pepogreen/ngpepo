@@ -16,7 +16,16 @@ cd ngpepo
 npm install
 ```
 ```
-npm start
+bower install
+```
+```
+grunt serve
+```
+
+Note: if you are getting any grunt: Command not found error, run the command below to install grunt
+
+```
+npm install -g grunt-cli
 ```
 
 # license

@@ -2,7 +2,7 @@
 
 This is a pepo for Angular beginners. Just pull it and start development....
 
-### Clone angular-seed
+### Clone ngpepo
 
 Clone ngpepo repository using git:
 
